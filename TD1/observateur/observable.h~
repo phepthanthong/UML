@@ -1,0 +1,12 @@
+#ifndef OBSERVABLE_H
+#define OBSERVABLE_H
+#include <iostream>
+#include "observer.h"
+
+class Observable {
+  void addObserver(Observer);
+  void deleteObserver();
+  void setChanged();
+  void notifyObservers(Objet);
+};
+#endif
